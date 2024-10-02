@@ -36,7 +36,7 @@ for day in weekly_days:
     end = station_rem[0].stats.endtime
     station_rem.trim(starttime=start+(20*60*60), endtime = start+(20*60*60)+60*20)
     station_rem_filt = station_rem.copy()
-    station_rem_filt.filter('bandpass',freqmin = 1, freqmax = 10,corners = 4,zerophase=True)
+    station_rem_filt.filter('bandpass',freqmin = 1.5, freqmax = 10,corners = 4,zerophase=True)
     weekly_data = abs(station_rem_filt[0].data)
     average = stats.median(weekly_data)
     weekly_avg.append(average)

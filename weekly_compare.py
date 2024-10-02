@@ -14,7 +14,7 @@ fig = plt.figure()
 weekly_days = np.arange(119,260,7)
 weekly_days[0] = 121
 n = 0 # change based on month 
-weekly_days = weekly_days[4*n:4*n+4]
+weekly_days = weekly_days[4*n:4*n+1]
 print(weekly_days)
 a = 1
 for day in weekly_days: 
@@ -29,20 +29,23 @@ for day in weekly_days:
     end = station_rem[0].stats.endtime
     station_rem.trim(starttime=start+(20*60*60), endtime = start+(20*60*60)+60*5)
     station_rem_filt = station_rem.copy()
-    station_rem_filt.filter('bandpass',freqmin = 1, freqmax = 10,corners = 4,zerophase=True)
+    station_rem_filt.filter('bandpass',freqmin = 1.5, freqmax = 10,corners = 4,zerophase=True)
+    envelope = obspy.signal.filter.envelope(station_rem_filt[0].data)
     t = np.arange(0, station_rem[0].stats.npts / station_rem[0].stats.sampling_rate, station_rem[0].stats.delta)
-    ax = plt.subplot(4, 1, a)
+    ax = plt.subplot(1, 1, a)
     plt.subplots_adjust(hspace=1)
-    ax.plot(t, station_rem_filt[0].data) 
+    ax.plot(t, station_rem_filt[0].data, 'k') 
+    ax.plot(t, envelope, 'r:') 
     #plt.plot(t, station_rem_filt[0].data) # plot on top of each other add colour legend etc. * use melt days = np.array([213,121])
     ax.set_ylim(-1*(10**-7), 1*(10**-7))
     plt.ylabel(str_start[5:10])
     a = a+1
 
 plt.xlabel("Time (s)")
-plt.suptitle("Tremor Amplitude of ___ Weeks")
-fig.savefig('weekly_compare'+str(n)+'.png')
+plt.suptitle("Tremor Amplitude of First Week")
+fig.savefig('temp_weekly_compare'+str(n)+'.png')
 
+'''
 fig2 = plt.figure()
 a = 1
 for day in weekly_days: 
@@ -70,3 +73,4 @@ for day in weekly_days:
 plt.xlabel("Time (s)")
 plt.suptitle("Absolute Tremor Amplitude of 4 Weeks")
 fig2.savefig('weekly_compare_abs'+str(n)+'.png')
+'''

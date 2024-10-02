@@ -28,14 +28,14 @@ station_rem.trim(starttime=start+(12*60*60), endtime = start+(12*60*60)+60*1)
 
 # Low Pass Filter 
 station_rem_lp_filt = station_rem.copy()
-station_rem_lp_filt.filter('lowpass',freq = 1.0, corners = 2,zerophase=True)
+station_rem_lp_filt.filter('lowpass',freq = 1.5, corners = 2,zerophase=True)
 #station_rem_lp_filt.plot(outfile='1min_' + str(day_num) + '_lowpass.png')
 
 station_rem_hp_filt = station_rem.copy()
 station_rem_hp_filt.filter('highpass',freq = 10, corners = 2,zerophase=True)
 
 station_rem_bp_filt = station_rem.copy()
-station_rem_bp_filt.filter('bandpass',freqmin = 1, freqmax = 10,corners = 4,zerophase=True)
+station_rem_bp_filt.filter('bandpass',freqmin = 1.5, freqmax = 10,corners = 4,zerophase=True)
 
 t = np.arange(0, station_rem[0].stats.npts / station_rem[0].stats.sampling_rate, station_rem[0].stats.delta)
 plt.subplot(411) #sharex=true
