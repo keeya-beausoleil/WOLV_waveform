@@ -78,3 +78,144 @@ IndexError: list index out of range
 2022-07-01T00:00:00.000000Z
 2022-08-01T00:00:00.000000Z
 2022-05-02T00:00:00.000000Z
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/daily_compare.py", line 44, in <module>
+    plt.plot(t, abs(station_rem_filt1[0].data)) # plot on top of each other add colour legend etc. * use melt days = np.array([213,121])
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/pyplot.py", line 2757, in plot
+    return gca().plot(
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/axes/_axes.py", line 1632, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/axes/_base.py", line 312, in __call__
+    yield from self._plot_args(this, kwargs)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/axes/_base.py", line 498, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (17280000,) and (60001,)
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/earthquake.py", line 25, in <module>
+    envelope = obspy.signal.filter.envelope(station_rem_filt1[0].data)
+AttributeError: module 'obspy.signal' has no attribute 'filter'
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/earthquake.py", line 26, in <module>
+    envelope = obspy.signal.filter.envelope(station_rem_filt1[0].data)
+AttributeError: module 'obspy.signal' has no attribute 'filter'
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/earthquake.py", line 26, in <module>
+    envelope = obspy.signal.filter.envelope(station_rem_filt1[0].data)
+AttributeError: module 'obspy.signal' has no attribute 'filter'
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/earthquake.py", line 26, in <module>
+    envelope = obspy.signal.filter.envelope(station_rem_filt1[0].data)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/core/stream.py", line 643, in __getitem__
+    return self.traces.__getitem__(index)
+IndexError: list index out of range
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+5
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+5
+5
+1 Trace(s) in Stream:
+XX.WOLN.00.HHZ | 2022-05-01T20:11:40.000000Z - 2022-05-01T20:13:20.000000Z | 200.0 Hz, 20001 samples
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/daily_compare.py", line 42, in <module>
+    envelope3 = obspy.signal.filter.envelope(station_rem_filt3[0].data)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/core/stream.py", line 643, in __getitem__
+    return self.traces.__getitem__(index)
+IndexError: list index out of range
+1 Trace(s) in Stream:
+XX.WOLN.00.HHZ | 2022-05-01T20:11:40.000000Z - 2022-05-01T20:13:20.000000Z | 200.0 Hz, 20001 samples
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+5
+5
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/earthquake.py", line 29, in <module>
+    plt.plot(t, station_rem[0].data)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/pyplot.py", line 2757, in plot
+    return gca().plot(
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/axes/_axes.py", line 1632, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/axes/_base.py", line 312, in __call__
+    yield from self._plot_args(this, kwargs)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/matplotlib/axes/_base.py", line 498, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (8001,) and (17280000,)
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+Traceback (most recent call last):
+  File "/data/stor/proj/Tremor_Comp/wf_analysis/daily_compare.py", line 40, in <module>
+    station_rem_cut2.trim(starttime=start+(16*60*60), endtime = start+(12*60*60)+60*5)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/core/stream.py", line 1536, in trim
+    trace.trim(starttime, endtime, pad=pad,
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/core/trace.py", line 282, in _add_processing_info
+    result = func(*args, **kwargs)
+  File "/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/core/trace.py", line 1183, in trim
+    raise ValueError("startime is larger than endtime")
+ValueError: startime is larger than endtime
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+5
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+5
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
+/mnt/ceph/beau4371/.conda/envs/keeya_env/lib/python3.9/site-packages/obspy/io/stationxml/core.py:91: UserWarning: The StationXML file has version 1.2, ObsPy can read versions (1.0, 1.1). Proceed with caution.
+  warnings.warn("The StationXML file has version %s, ObsPy can "
