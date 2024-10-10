@@ -1,0 +1,49 @@
+{
+  "build": "h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/mnt/ceph/beau4371/.conda/pkgs/ca-certificates-2024.9.24-h06a4308_0",
+  "features": "",
+  "files": [
+    "ssl/cacert.pem",
+    "ssl/cert.pem"
+  ],
+  "fn": "ca-certificates-2024.9.24-h06a4308_0.tar.bz2",
+  "license": "MPL-2.0",
+  "license_family": "Other",
+  "link": {
+    "source": "/mnt/ceph/beau4371/.conda/pkgs/ca-certificates-2024.9.24-h06a4308_0",
+    "type": 1
+  },
+  "md5": "4a091502b44d4090f30f0be847a8139c",
+  "name": "ca-certificates",
+  "package_tarball_full_path": "/mnt/ceph/beau4371/.conda/pkgs/ca-certificates-2024.9.24-h06a4308_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "ssl/cacert.pem",
+        "path_type": "hardlink",
+        "sha256": "189d3cf6d103185fba06d76c1af915263c6d42225481a1759e853b33ac857540",
+        "sha256_in_prefix": "189d3cf6d103185fba06d76c1af915263c6d42225481a1759e853b33ac857540",
+        "size_in_bytes": 234847
+      },
+      {
+        "_path": "ssl/cert.pem",
+        "path_type": "softlink",
+        "sha256": "189d3cf6d103185fba06d76c1af915263c6d42225481a1759e853b33ac857540",
+        "size_in_bytes": 234847
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e9f2e55d34b1b0b9b48e48a1d6e4503653f8b7059114d23f758b7c68dde2334a",
+  "size": 139901,
+  "subdir": "linux-64",
+  "timestamp": 1727794854964,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/ca-certificates-2024.9.24-h06a4308_0.tar.bz2",
+  "version": "2024.9.24"
+}
